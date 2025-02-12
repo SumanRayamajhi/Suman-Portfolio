@@ -1,27 +1,43 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import { Button } from "./ui/button";
+import { FiDownload } from "react-icons/fi";
 
 function HeroSection() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-12 mt-[10vh]">
-      <div className="col-span-7 place-self-center">
-        <h1 className="mb-4 text-4xl lg:text-6xl font-extrabold">
-          {" "}
-          Hello, I'm Suman
-        </h1>
-        <p className="text-lg lg:text-xl">Front-end web developer</p>
-        <div>
-          <button className="px-6 py-3 rounded-full mr-4 bg-green-600 hover:bg-green-700">
-            Hire Me
-          </button>
-          <button className="px-6 py-3 rounded-full bg-green-600  hover:bg-green-700">
-            Download CV
-          </button>
-        </div>
-      </div>
-      <div className="col-span-5 place-self-center mt-4 lg:mt-1">
-        <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-          <Image src={assets.ProfileImg} alt="profile" />
+    <section className="h-full mt-14">
+      <div className="container mx-auto h-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+          <div className=" text-center order-2 lg:order-none flex flex-col  items-center justify-between lg:items-start lg:text-left">
+            <h3 className="h3">Front Web Developer</h3>
+            <h2 className="h2">
+              Hello I'm <br /> <span className="h1">Suman Rayamajhi</span>
+            </h2>
+            <p className="max-w-[500px] mb-9 mt-5 ">
+              Motivated and detail-oriented Junior Frontend Developer
+              specializing in React.js. Seeking an opportunity to grow and
+              contribute to a dynamic development team.
+            </p>
+
+            <Button
+              variant="outline"
+              className="uppercase flex items-center gap-2"
+            >
+              <span>Download CV</span>
+              <FiDownload className="text-xl" />
+            </Button>
+          </div>
+          <div className="order-1 lg:order-none mb-8 lg:mb-0">
+            <div className="w-[298px] h-[298px] lg:w-[498px] lg:h-[498px] mt-9 lg:mt-0">
+              <Image
+                src={assets.ProfileImg}
+                alt="profile"
+                priority
+                quality={100}
+                className="rounded-full "
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
