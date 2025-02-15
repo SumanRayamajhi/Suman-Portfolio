@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import { aboutList } from "@/utils/aboutLinks";
 
 function AboutSection() {
   return (
@@ -17,6 +18,24 @@ function AboutSection() {
             and consuming and implementing REST APIs to create efficient and
             aesthetically pleasing UI/UX designs.
           </p>
+
+          <ul className="grid grid-cols-3 lg:grid-cols-3 gap-6 max-w-2xl">
+            {aboutList.map((list, index) => {
+              const { icon, title, description } = list;
+              return (
+                <li
+                  key={index}
+                  className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-300 hover:shadow-black"
+                >
+                  <div className="text-green-700 font-extrabold mt-3">
+                    {icon}
+                  </div>
+                  <h3 className="my-4 font-semibold">{title}</h3>
+                  <p className="text-sm">{description}</p>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </section>
