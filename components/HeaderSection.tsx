@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
-function Navbar() {
+function HeaderSection() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -106,4 +106,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default HeaderSection;
