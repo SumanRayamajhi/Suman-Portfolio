@@ -22,19 +22,19 @@ export function NavItems(): NavLinks[] {
       position: "top",
     },
     {
-      href: "/about",
+      href: "#about",
       label: "about",
       active: isNavItemsActive(pathname, "/about"),
       position: "top",
     },
     {
-      href: "/project",
+      href: "#project",
       label: "project",
       active: isNavItemsActive(pathname, "/project"),
       position: "top",
     },
     {
-      href: "/contact",
+      href: "#contact",
       label: "contact",
       active: isNavItemsActive(pathname, "/contact"),
       position: "top",
