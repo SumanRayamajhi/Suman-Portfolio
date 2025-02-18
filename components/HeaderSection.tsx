@@ -1,6 +1,6 @@
 "use client";
 
-import { NavItems } from "@/utils/links";
+import { NavItems } from "@/utils/navLinks";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
