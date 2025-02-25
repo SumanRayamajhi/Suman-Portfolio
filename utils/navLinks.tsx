@@ -6,7 +6,7 @@ type NavLinks = {
 export function NavItems(): NavLinks[] {
   return [
     {
-      href: "/",
+      href: "#home",
       label: "home",
     },
     {

@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 
 function HeroSection() {
   return (
-    <section className="h-full mt-14">
+    <section id="home" className="h-full mt-14">
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className=" text-center order-2 lg:order-none flex flex-col  items-center justify-between lg:items-start lg:text-left">
