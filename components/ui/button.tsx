@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-green-600 text-primary hover:bg-green-700",
         outline:
-          "border border-green-600 text-green-600 hover:bg-green-600 hover:text-white",
+          "border border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition hover:duration-300  ",
       },
       size: {
         default: "h-[44px] px-6",
