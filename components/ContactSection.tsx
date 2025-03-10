@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
+import { Input } from "./ui/input";
 
 function ContactSection() {
   return (
@@ -18,10 +19,10 @@ function ContactSection() {
             >
               <h3 className="h3 text-green-600 ">Let´s work together</h3>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <input type="firstname" placeholder="Firstname" />
-                <input type="lastname" placeholder="Lastname" />
-                <input type="email" placeholder="Email address" />
-                <input type="phone" placeholder="Phone number" />
+                <Input type="firstname" placeholder="Firstname" />
+                <Input type="lastname" placeholder="Lastname" />
+                <Input type="email" placeholder="Email address" />
+                <Input type="phone" placeholder="Phone number" />
               </div>
             </form>
           </div>
