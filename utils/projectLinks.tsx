@@ -1,38 +1,19 @@
-/* export const projects = [//-
-  {//-
-    num: "01",//-
-    category: "frontend",//-
-    title: "Spain at Mipim",//-
-    description://-
-      "A responsive website built with Next JS for a company business.",//-
-    stack: [//-
-      { name: "HTML 5" },//-
-      { name: "CSS 3" },//-
-      { name: "JavaScript" },//-
-      { name: "NextJS" },//-
-    ],//-
-    image: "ProfileImg",//-
-    github: "",//-
-  },//-
-]; */ //-
 import { StaticImageData } from "next/image"; //+
 import { assets } from "@/assets/assets";
 
 type ProjectLinkTypes = {
-  num: string;
   category: string;
   title: string;
   description: string;
   stack: { name: string }[];
   image: StaticImageData;
-  github?: string;
-  link: string;
+  githubLink?: string;
+  liveLink: string;
 };
 
 export const projectList: ProjectLinkTypes[] = [
   {
-    num: "01",
-    category: "frontend project",
+    category: "Frontend Project",
     title: "Spain at Mipim",
     description:
       "A responsive website built with Next JS for a company business.",
@@ -43,6 +24,51 @@ export const projectList: ProjectLinkTypes[] = [
       { name: "NextJS" },
     ],
     image: assets.ProjectImg1,
-    link: "https://www.spainatmipim.com",
+    liveLink: "https://www.spainatmipim.com",
+    githubLink: "https://www.spainatmipim.com",
+  },
+  {
+    category: "Frontend Project",
+    title: "Spain at Mipim",
+    description:
+      "A responsive website built with Next JS for a company business.",
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "JavaScript" },
+      { name: "NextJS" },
+    ],
+    image: assets.ProjectImg1,
+    liveLink: "https://www.spainatmipim.com",
+  },
+  {
+    category: "Frontend Project",
+    title: "Spain at Mipim",
+    description:
+      "A responsive website built with Next JS for a company business.",
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "JavaScript" },
+      { name: "NextJS" },
+    ],
+    image: assets.ProjectImg1,
+    liveLink: "https://www.spainatmipim.com",
+    githubLink: "https://www.spainatmipim.com",
+  },
+  {
+    category: "Frontend Project",
+    title: "Spain at Mipim",
+    description:
+      "A responsive website built with Next JS for a company business.",
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "JavaScript" },
+      { name: "NextJS" },
+    ],
+    image: assets.ProjectImg1,
+    liveLink: "https://www.spainatmipim.com",
+    githubLink: "https://www.spainatmipim.com",
   },
 ];
