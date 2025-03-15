@@ -3,7 +3,7 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 
 interface MobileMenuProps {
-  activeSections: string;
+  activeSection: string;
 }
 
 function MobileMenu({ activeSection }: MobileMenuProps) {
