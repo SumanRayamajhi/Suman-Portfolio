@@ -39,6 +39,7 @@ function MobileMenu() {
         className={`fixed top-[10vh] left-0 w-full h-screen lg:hidden bg-slate-200 flex flex-col items-center justify-center transition-transform duration-300 ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
+        onClick={toggleMobileMenu}
       >
         <section className="flex flex-col font-semibold space-y-6">
           {navItems.map((item, index) => (
