@@ -11,7 +11,7 @@ function MobileMenu() {
 
   return (
     <div>
-      <div className="flex items-center space-x-6 lg:hidden>">
+      <div className="flex items-center space-x-6 lg:hidden">
         <button
           onClick={toggleMobileMenu}
           className=" flex flex-col justify-center items-end w-8 h-8 focus:outline-none group gap-1 lg:hidden"
