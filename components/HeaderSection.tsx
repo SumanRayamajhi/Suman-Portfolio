@@ -68,7 +68,7 @@ function HeaderSection() {
           ))}
         </div>
       </nav>
-      <MobileMenu />
+      <MobileMenu activeSection={activeSection} />
     </header>
   );
 }

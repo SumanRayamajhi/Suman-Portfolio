@@ -2,7 +2,11 @@ import { NavItems } from "@/utils/navLinks";
 import { useState } from "react";
 import NavLink from "./NavLink";
 
-function MobileMenu() {
+interface MobileMenuProps {
+  activeSections: string;
+}
+
+function MobileMenu({ activeSection }: MobileMenuProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -48,6 +52,7 @@ function MobileMenu() {
               key={index}
               label={item.label}
               onClick={toggleMobileMenu}
+              isActive={activeSection === item.href.replace("#", "")}
             />
           ))}
         </section>
