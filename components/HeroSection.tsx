@@ -5,11 +5,14 @@ import { FiDownload } from "react-icons/fi";
 
 function HeroSection() {
   return (
-    <section id="home" className="h-full mt-14">
+    <section
+      id="home"
+      className="h-full mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-stone-200"
+    >
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className=" text-center order-2 lg:order-none flex flex-col  items-center justify-between lg:items-start lg:text-left">
-            <h3 className="h3">Front Web Developer</h3>
+            <h3 className="h3">Frontend Web Developer</h3>
             <h2 className="h2">
               Hello I'm <br /> <span className="h1">Suman Rayamajhi</span>
             </h2>
