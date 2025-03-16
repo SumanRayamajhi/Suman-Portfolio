@@ -26,7 +26,12 @@ function HeroSection() {
               variant="outline"
               className="uppercase flex items-center gap-2"
             >
-              <span>Download CV</span>
+              <a
+                download="Suman-Rayamajhi-Resume.pdf"
+                href="/resume/Suman-Rayamajhi-Resume.pdf"
+              >
+                Download CV
+              </a>
               <FiDownload className="text-xl" />
             </Button>
           </div>
