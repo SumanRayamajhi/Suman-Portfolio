@@ -15,7 +15,7 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
 
   return (
     <div>
-      <div className="flex items-center space-x-6 lg:hidden">
+      <div className="flex items-center space-x-6">
         <button
           onClick={toggleMobileMenu}
           className=" flex flex-col justify-center items-end w-8 h-8 focus:outline-none group gap-1 lg:hidden"
@@ -40,8 +40,8 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
       </div>
 
       <div
-        className={`fixed top-[10vh] left-0 w-full h-screen lg:hidden bg-slate-200 flex flex-col items-center justify-center transition-transform duration-300 ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-[10vh] right-0 w-[75%] h-screen lg:hidden bg-stone-300 flex flex-col items-center justify-center transition-transform duration-300 ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-[100%]"
         }`}
         onClick={toggleMobileMenu}
       >
