@@ -39,7 +39,7 @@ function HeaderSection() {
 
   return (
     <header
-      className={`fixed top-0 left-0 h-[10vh] w-full z-10 px-4 md:px-8 lg:px-20 flex justify-center items-center ${
+      className={`fixed top-0 left-0 h-[11vh] w-full z-10 px-4 md:px-8 lg:px-20 flex justify-center items-center ${
         isScrolled ? "bg-opacity-55 backdrop-blur-lg shadow-md" : ""
       }`}
     >
