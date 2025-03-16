@@ -39,8 +39,10 @@ function HeaderSection() {
 
   return (
     <header
-      className={`fixed top-0 left-0 h-[11vh] w-full z-10 px-4 md:px-8 lg:px-20 flex justify-center items-center ${
-        isScrolled ? "bg-opacity-55 backdrop-blur-lg shadow-md" : ""
+      className={`fixed top-0 left-0 h-[11vh] w-full z-10 px-4 sm:px-8 lg:px-16 flex justify-center items-center transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? "bg-white shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)] translate-y-[-5px]"
+          : "bg-stone-200 translate-y-0"
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between">
