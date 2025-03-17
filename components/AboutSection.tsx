@@ -23,7 +23,7 @@ function AboutSection() {
         <div className="flex-1">
           <ul className="grid grid-cols-3 lg:grid-cols-3 gap-6 max-w-2xl">
             {aboutList.map((list, index) => {
-              const { icon, title, description } = list;
+              const { icon, title } = list;
               return (
                 <li
                   key={index}
@@ -33,7 +33,6 @@ function AboutSection() {
                     {icon}
                   </div>
                   <h3 className="my-4 font-semibold">{title}</h3>
-                  <p className="text-sm">{description}</p>
                 </li>
               );
             })}

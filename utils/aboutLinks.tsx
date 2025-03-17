@@ -14,7 +14,6 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 type AboutLinkTypes = {
   icon: React.ReactNode;
   title: string;
-  description: string;
 };
 
 type SkillsLinkTypes = {
@@ -26,17 +25,14 @@ export const aboutList: AboutLinkTypes[] = [
   {
     icon: <RiUserSettingsFill size={30} />,
     title: "Skills",
-    description: "HTML, CSS, JavaScript, React Js, Next Ja",
   },
   {
     icon: <FaGraduationCap size={30} />,
     title: "Education",
-    description: "Full Stack Web Development Course",
   },
   {
     icon: <GoProjectSymlink size={30} />,
     title: "Projects",
-    description: "Build few projects",
   },
 ];
 
