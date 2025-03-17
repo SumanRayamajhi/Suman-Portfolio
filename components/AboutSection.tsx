@@ -5,7 +5,10 @@ import SectionHeading from "./SectionHeading";
 
 function AboutSection() {
   return (
-    <section id="about" className="w-full  py-10 scroll-mt-20">
+    <section
+      id="about"
+      className="w-full scroll-mt-20 py-16 px-4 sm:px-8 lg:px-16 bg-gray-200"
+    >
       <SectionHeading
         title="About Me"
         description="Passionate about building user-friendly, responsive, and scalable

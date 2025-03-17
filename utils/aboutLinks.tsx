@@ -1,5 +1,6 @@
 import { FaCode, FaGraduationCap } from "react-icons/fa6";
 import { GoProjectSymlink } from "react-icons/go";
+import { RiUserSettingsFill } from "react-icons/ri";
 
 type AboutLinkTypes = {
   icon: React.ReactNode;
@@ -9,8 +10,8 @@ type AboutLinkTypes = {
 
 export const aboutList: AboutLinkTypes[] = [
   {
-    icon: <FaCode size={30} />,
-    title: "Languages",
+    icon: <RiUserSettingsFill size={30} />,
+    title: "Skills",
     description: "HTML, CSS, JavaScript, React Js, Next Ja",
   },
   {
