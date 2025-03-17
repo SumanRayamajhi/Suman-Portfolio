@@ -25,10 +25,7 @@ function AboutSection() {
             {aboutList.map((list, index) => {
               const { icon, title } = list;
               return (
-                <li
-                  key={index}
-                  className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-300 hover:shadow-black"
-                >
+                <li key={index} className="flex">
                   <div className="text-green-700 font-extrabold mt-3">
                     {icon}
                   </div>
