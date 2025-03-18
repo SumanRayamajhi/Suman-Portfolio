@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
-import { aboutList } from "@/utils/aboutLinks";
 import SectionHeading from "./SectionHeading";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { RiUserSettingsFill } from "react-icons/ri";
+import { FaGraduationCap } from "react-icons/fa6";
+import { GoProjectSymlink } from "react-icons/go";
 
 function AboutSection() {
   return (
@@ -21,19 +24,32 @@ function AboutSection() {
           <Image src={assets.ComputerImg1} alt="computer" className="w-full" />
         </div>
         <div className="flex-1">
-          <ul className="grid grid-cols-3 lg:grid-cols-3 gap-6 max-w-2xl">
-            {aboutList.map((list, index) => {
-              const { icon, title } = list;
-              return (
-                <li key={index} className="flex">
-                  <div className="text-green-700 font-extrabold mt-3">
-                    {icon}
-                  </div>
-                  <h3 className="my-4 font-semibold">{title}</h3>
-                </li>
-              );
-            })}
-          </ul>
+          <Tabs defaultValue="Skills">
+            <TabsList
+              className="grid w-full grid-cols-3 gap-7
+            "
+            >
+              <TabsTrigger value="Skills" className="gap-3">
+                <span>
+                  <RiUserSettingsFill size={25} />
+                </span>
+                Skills
+              </TabsTrigger>
+              <TabsTrigger value="Education" className="gap-3">
+                <span>
+                  <FaGraduationCap size={25} />
+                </span>
+                Education
+              </TabsTrigger>
+              <TabsTrigger value="Projects" className="gap-3">
+                <GoProjectSymlink size={25} />
+                Projects
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="Skills">Skills</TabsContent>
+            <TabsContent value="Education">Education</TabsContent>
+            <TabsContent value="Projects">Projects</TabsContent>
+          </Tabs>
         </div>
       </div>
     </section>
