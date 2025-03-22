@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { RiUserSettingsFill } from "react-icons/ri";
 import { FaGraduationCap } from "react-icons/fa6";
 import { GoProjectSymlink } from "react-icons/go";
-import { skillsList } from "@/utils/aboutLinks";
+import { educationList, skillsList } from "@/utils/aboutLinks";
 import {
   Tooltip,
   TooltipContent,
@@ -83,7 +83,34 @@ function AboutSection() {
                 })}
               </ul>
             </TabsContent>
-            <TabsContent value="Education">Education</TabsContent>
+            <TabsContent value="Education" className="w-full py-6">
+              <div className="h-[400px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  {educationList.map((education, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-400 shadow-md transition group gap-2"
+                      >
+                        <div className="flex gap-2">
+                          <span className="text-green-600">
+                            {education.icon}
+                          </span>
+                          <h4 className="font-bold">{education.duration}</h4>
+                        </div>
+
+                        <h3 className="h3 lg:text-[20px]">
+                          {education.degree}
+                        </h3>
+                        <p className="text-green-600">
+                          {education.institution}
+                        </p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
             <TabsContent value="Projects">Projects</TabsContent>
           </Tabs>
         </div>

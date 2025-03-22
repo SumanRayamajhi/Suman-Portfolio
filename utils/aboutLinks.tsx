@@ -1,6 +1,7 @@
 import { FaCode, FaGraduationCap } from "react-icons/fa6";
 import { GoProjectSymlink } from "react-icons/go";
 import { RiUserSettingsFill, RiNextjsFill } from "react-icons/ri";
+import { MdDateRange } from "react-icons/md";
 import {
   FaHtml5,
   FaCss3,
@@ -19,6 +20,13 @@ type AboutLinkTypes = {
 type SkillsLinkTypes = {
   icon: React.ReactNode;
   title: string;
+};
+
+type EducationLinkTypes = {
+  icon: React.ReactNode;
+  duration: string;
+  degree: string;
+  institution: string;
 };
 
 export const aboutList: AboutLinkTypes[] = [
@@ -68,5 +76,20 @@ export const skillsList: SkillsLinkTypes[] = [
   {
     icon: <FaFigma size={30} />,
     title: "Figma",
+  },
+];
+
+export const educationList: EducationLinkTypes[] = [
+  {
+    icon: <MdDateRange size={30} />,
+    duration: "May 2021 - Jan 2022",
+    degree: "Full-Stack Web Development Course",
+    institution: "Migracode, Bircelona",
+  },
+  {
+    icon: <MdDateRange size={30} />,
+    duration: "Oct 2015 - Nov 2016",
+    degree: "MSC in International Business and Management",
+    institution: "Niels Brock Copenhagen Business College",
   },
 ];
