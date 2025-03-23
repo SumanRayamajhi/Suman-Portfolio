@@ -21,6 +21,14 @@ type EducationLinkTypes = {
   institution: string;
 };
 
+type ExperienceLinkTypes = {
+  icon: React.ReactNode;
+  duration: string;
+  title: string;
+  company: string;
+  description: string;
+};
+
 export const SVGIconEducation = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -118,5 +126,32 @@ export const educationList: EducationLinkTypes[] = [
     duration: "Oct 2015 - Nov 2016",
     degree: "MSC in International Business and Management",
     institution: "Niels Brock Copenhagen Business College",
+  },
+];
+
+export const experienceList: ExperienceLinkTypes[] = [
+  {
+    icon: <MdDateRange size={30} />,
+    duration: "Nov 2023 - Oct 2024",
+    title: "Junior Front-end Developer",
+    company: "Meridiana",
+    description:
+      "Worked on Spain at Mipim project, contributing to the development of new web app project from starting to complete.",
+  },
+  {
+    icon: <MdDateRange size={30} />,
+    duration: "Feb 2023 - July 2024",
+    title: "Junior Front-end Developer",
+    company: "Explorins",
+    description:
+      "Worked on existing project, contributing to the development of new features and improving existing ones.",
+  },
+  {
+    icon: <MdDateRange size={30} />,
+    duration: "Oct 2022 - Dec 2023",
+    title: "Junior Front-end Developer",
+    company: "Airlingo",
+    description:
+      "Worked on completely new project, contributing to the development of initial features.",
   },
 ];

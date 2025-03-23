@@ -4,6 +4,7 @@ import SectionHeading from "./SectionHeading";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   educationList,
+  experienceList,
   skillsList,
   SVGIconEducation,
   SVGIconExperience,
@@ -54,7 +55,7 @@ function AboutSection() {
                 Education
               </TabsTrigger>
               <TabsTrigger
-                value="Projects"
+                value="Experience"
                 className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
               >
                 <SVGIconExperience />
@@ -114,7 +115,33 @@ function AboutSection() {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="Projects">Projects</TabsContent>
+            <TabsContent value="Experience" className="w-full py-6">
+              <div className="h-[400px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  {experienceList.map((experience, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-400 shadow-md transition group gap-2"
+                      >
+                        <div className="flex gap-2">
+                          <span className="text-green-600">
+                            {experience.icon}
+                          </span>
+                          <h4 className="font-bold">{experience.duration}</h4>
+                        </div>
+
+                        <h3 className="h3 lg:text-[20px]">
+                          {experience.title}
+                        </h3>
+                        <p className="text-green-600">{experience.company}</p>
+                        <p className="">{experience.description}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
           </Tabs>
         </div>
       </div>
