@@ -16,12 +16,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { ScrollArea } from "./ui/scroll-area";
 
 function AboutSection() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center w-full scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-gray-200"
+      className="flex flex-col items-center min-h-[80vh] w-full scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-gray-200"
     >
       <SectionHeading
         title="About Me"
@@ -37,7 +38,7 @@ function AboutSection() {
             priority
           />
         </div>
-        <div className="flex-1 w-full flex flex-col justify-center">
+        <div className="flex-1 w-full flex-col justify-center">
           <Tabs defaultValue="Skills" className="w-full">
             <TabsList className="flex flex-col md:flex-row justify-center gap-4 py-20 md:py-0">
               <TabsTrigger
@@ -89,7 +90,7 @@ function AboutSection() {
             </TabsContent>
             <TabsContent value="Education" className="w-full py-6">
               <div className="h-[400px]">
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <ul className="grid grid-col-1 gap-4">
                   {educationList.map((education, index) => {
                     return (
                       <li
@@ -116,8 +117,8 @@ function AboutSection() {
               </div>
             </TabsContent>
             <TabsContent value="Experience" className="w-full py-6">
-              <div className="h-[400px]">
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ScrollArea className="h-[400px]">
+                <ul className="grid grid-cols-1 gap-4">
                   {experienceList.map((experience, index) => {
                     return (
                       <li
@@ -140,7 +141,7 @@ function AboutSection() {
                     );
                   })}
                 </ul>
-              </div>
+              </ScrollArea>
             </TabsContent>
           </Tabs>
         </div>
