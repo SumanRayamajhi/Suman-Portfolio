@@ -2,10 +2,13 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import SectionHeading from "./SectionHeading";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { RiUserSettingsFill } from "react-icons/ri";
-import { FaGraduationCap } from "react-icons/fa6";
-import { GoProjectSymlink } from "react-icons/go";
-import { educationList, skillsList } from "@/utils/aboutLinks";
+import {
+  educationList,
+  skillsList,
+  SVGIconEducation,
+  SVGIconExperience,
+  SVGIconSkill,
+} from "@/utils/aboutLinks";
 import {
   Tooltip,
   TooltipContent,
@@ -40,22 +43,22 @@ function AboutSection() {
                 value="Skills"
                 className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
               >
-                <RiUserSettingsFill size={25} />
+                <SVGIconSkill />
                 Skills
               </TabsTrigger>
               <TabsTrigger
                 value="Education"
                 className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
               >
-                <FaGraduationCap size={25} />
+                <SVGIconEducation />
                 Education
               </TabsTrigger>
               <TabsTrigger
                 value="Projects"
                 className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
               >
-                <GoProjectSymlink size={25} />
-                Projects
+                <SVGIconExperience />
+                Experience
               </TabsTrigger>
             </TabsList>
             <TabsContent value="Skills" className="w-full py-6">
