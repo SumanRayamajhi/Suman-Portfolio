@@ -1,23 +1,10 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 import SectionHeading from "./SectionHeading";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  educationList,
-  experienceList,
-  skillsList,
-  SVGIconEducation,
-  SVGIconExperience,
-  SVGIconSkill,
-} from "@/utils/aboutLinks";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "./ui/tooltip";
-import { ScrollArea } from "./ui/scroll-area";
-import AboutContent from "./AboutContent";
+import { Tabs } from "@/components/ui/tabs";
+import { educationList, experienceList, skillsList } from "@/utils/aboutLinks";
+import AboutTabslist from "./AboutTabslist";
+import AboutTabsContent from "./AboutTabsContent";
 
 function AboutSection() {
   return (
@@ -41,89 +28,12 @@ function AboutSection() {
         </div>
         <div className="flex-1 w-full flex-col justify-center">
           <Tabs defaultValue="Skills" className="w-full">
-            <TabsList className="flex flex-col md:flex-row justify-center gap-4 py-20 md:py-0">
-              <TabsTrigger
-                value="Skills"
-                className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
-              >
-                <SVGIconSkill />
-                Skills
-              </TabsTrigger>
-              <TabsTrigger
-                value="Education"
-                className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
-              >
-                <SVGIconEducation />
-                Education
-              </TabsTrigger>
-              <TabsTrigger
-                value="Experience"
-                className="flex items-center gap-2 px-6 py-2 text-lg rounded-md"
-              >
-                <SVGIconExperience />
-                Experience
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="Skills" className="w-full py-6">
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center">
-                {skillsList.map((skill, index) => {
-                  return (
-                    <li
-                      key={index}
-                      className="hover:scale-105 transition-transform"
-                    >
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-20 h-20 sm:w-24 sm:h-24  bg-stone-400 rounded-lg flex justify-center items-center shadow-md transition group">
-                            <div className="text-5xl text-gray-100 group-hover:text-green-600">
-                              {skill.icon}
-                            </div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{skill.title}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  );
-                })}
-              </ul>
-            </TabsContent>
-            <TabsContent value="Education" className="w-full py-6">
-              <div className="h-[400px]">
-                <ul className="grid grid-col-1 gap-4">
-                  {educationList.map((education, index) => {
-                    return (
-                      <AboutContent
-                        key={index}
-                        icon={education.icon}
-                        duration={education.duration}
-                        title={education.degree}
-                        organization={education.institution}
-                      ></AboutContent>
-                    );
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
-            <TabsContent value="Experience" className="w-full py-6">
-              <ScrollArea className="h-[400px]">
-                <ul className="grid grid-cols-1 gap-4">
-                  {experienceList.map((experience, index) => {
-                    return (
-                      <AboutContent
-                        key={index}
-                        icon={experience.icon}
-                        duration={experience.duration}
-                        title={experience.title}
-                        organization={experience.company}
-                        description={experience.description}
-                      ></AboutContent>
-                    );
-                  })}
-                </ul>
-              </ScrollArea>
-            </TabsContent>
+            <AboutTabslist />
+            <AboutTabsContent
+              educationList={educationList}
+              experienceList={experienceList}
+              skillsList={skillsList}
+            />
           </Tabs>
         </div>
       </div>
