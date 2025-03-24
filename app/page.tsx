@@ -1,9 +1,15 @@
-import Navbar from "@/components/Navbar";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import ProjectSection from "@/components/ProjectSection";
 
 function HomePage() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <HeroSection />
+      <AboutSection />
+      <ProjectSection />
+      <ContactSection />
     </main>
   );
 }
