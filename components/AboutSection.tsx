@@ -17,6 +17,7 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { ScrollArea } from "./ui/scroll-area";
+import AboutContent from "./AboutContent";
 
 function AboutSection() {
   return (
@@ -93,24 +94,13 @@ function AboutSection() {
                 <ul className="grid grid-col-1 gap-4">
                   {educationList.map((education, index) => {
                     return (
-                      <li
+                      <AboutContent
                         key={index}
-                        className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-400 shadow-md transition group gap-2"
-                      >
-                        <div className="flex gap-2">
-                          <span className="text-green-600">
-                            {education.icon}
-                          </span>
-                          <h4 className="font-bold">{education.duration}</h4>
-                        </div>
-
-                        <h3 className="h3 lg:text-[20px]">
-                          {education.degree}
-                        </h3>
-                        <p className="text-green-600">
-                          {education.institution}
-                        </p>
-                      </li>
+                        icon={education.icon}
+                        duration={education.duration}
+                        title={education.degree}
+                        organization={education.institution}
+                      ></AboutContent>
                     );
                   })}
                 </ul>
@@ -121,23 +111,14 @@ function AboutSection() {
                 <ul className="grid grid-cols-1 gap-4">
                   {experienceList.map((experience, index) => {
                     return (
-                      <li
+                      <AboutContent
                         key={index}
-                        className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-400 shadow-md transition group gap-2"
-                      >
-                        <div className="flex gap-2">
-                          <span className="text-green-600">
-                            {experience.icon}
-                          </span>
-                          <h4 className="font-bold">{experience.duration}</h4>
-                        </div>
-
-                        <h3 className="h3 lg:text-[20px]">
-                          {experience.title}
-                        </h3>
-                        <p className="text-green-600">{experience.company}</p>
-                        <p className="">{experience.description}</p>
-                      </li>
+                        icon={experience.icon}
+                        duration={experience.duration}
+                        title={experience.title}
+                        organization={experience.company}
+                        description={experience.description}
+                      ></AboutContent>
                     );
                   })}
                 </ul>
