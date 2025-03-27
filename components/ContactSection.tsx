@@ -8,7 +8,7 @@ import { contactList } from "@/utils/contactLinks";
 
 function ContactSection() {
   return (
-    <section id="contact" className="py-10 scroll-mt-20">
+    <section id="contact" className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16">
       <SectionHeading
         title="Contact"
         description="
@@ -19,17 +19,18 @@ function ContactSection() {
           <div className="lg:h-[54%] order-2 lg:order-none">
             <form
               action=""
-              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-lg lg:w-[36rem]"
             >
               <h3 className="h3 text-green-600 ">Let´s work together</h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 text-white/75">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
-              </div>
+
+              <Input
+                type="email"
+                placeholder="Email address"
+                className="h-14 rounded-lg"
+              />
+
               <Textarea
-                className="h-[200px] text-white/75"
+                className="h-52 my-3 text-white/75"
                 placeholder="Type your message here."
               />
               <Button
