@@ -1,12 +1,21 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import SectionHeading from "./SectionHeading";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { FiSend } from "react-icons/fi";
 import { contactList } from "@/utils/contactLinks";
+import { sendEmail } from "@/server/sendEmail";
 
 function ContactSection() {
+  const [formData, setFormData] = useState({ email: "", message: "" });
+
+  /*  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
+  }; */
+
   return (
     <section id="contact" className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16">
       <SectionHeading
@@ -18,24 +27,40 @@ function ContactSection() {
         <div className="flex flex-col lg:flex-row gap-[30px]">
           <div className="lg:h-[54%] order-2 lg:order-none">
             <form
-              action=""
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-lg lg:w-[36rem]"
+              action={async (formData) => {
+                await sendEmail(formData);
+              }}
             >
               <h3 className="h3 text-green-600 ">Let´s work together</h3>
 
               <Input
                 type="email"
+                name="senderEmail"
+                required
                 placeholder="Email address"
+                area-label="Email address"
                 className="h-14 rounded-lg"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
               />
 
               <Textarea
                 className="h-52 my-3 text-white/75"
+                required
                 placeholder="Type your message here."
+                name="message"
+                aria-label="Message"
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
               />
               <Button
                 variant="outline"
-                className="max-w-44 flex items-center gap-2"
+                className="max-w-44 flex items-center gap-2 "
               >
                 <span>Send Message</span>
                 <FiSend className="text-xl" />
