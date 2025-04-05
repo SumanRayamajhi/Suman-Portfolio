@@ -32,6 +32,7 @@ function HeaderSection() {
       });
       setActiveSection(currentSection);
     };
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
