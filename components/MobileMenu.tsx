@@ -22,19 +22,19 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-4 h-0.5 bg-black transform transition-all duration-300 rounded-sm  ${
+            className={`block w-4 h-0.5  transform transition-all duration-300 rounded-sm  ${
               isMobileMenuOpen ? "rotate-45 w-[23px] translate-y-[6px] " : ""
-            }`}
+            }  ${activeSection === "home" ? "bg-white" : "bg-black"}`}
           ></span>
           <span
-            className={`block w-6 h-0.5 bg-black transform transition-all duration-300 rounded-sm ${
+            className={`block w-6 h-0.5 transform transition-all duration-300 rounded-sm ${
               isMobileMenuOpen ? "opacity-0 scale-x-0" : ""
-            }`}
+            }  ${activeSection === "home" ? "bg-white" : "bg-black"}`}
           ></span>
           <span
-            className={`block w-5 h-0.5 bg-black transform transition-all duration-300 rounded-sm ${
+            className={`block w-5 h-0.5  transform transition-all duration-300 rounded-sm ${
               isMobileMenuOpen ? "-rotate-45 w-6 -translate-y-1.5 bg-black" : ""
-            }`}
+            }  ${activeSection === "home" ? "bg-white" : "bg-black"}`}
           ></span>
         </button>
       </div>
