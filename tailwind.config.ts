@@ -16,7 +16,9 @@ const config: Config = {
 
 			boxShadow: {
 				"black": "1px 1px 5px 1px  #000",
-
+			},
+			backgroundImage: {
+				"parallax": 'url("../public/images/heroimg.svg")'
 			},
 
 		}
