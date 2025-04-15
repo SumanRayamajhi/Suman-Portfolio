@@ -53,6 +53,7 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
               label={item.label}
               onClick={toggleMobileMenu}
               isActive={activeSection === item.href.replace("#", "")}
+              activeSection={activeSection}
             />
           ))}
         </section>
