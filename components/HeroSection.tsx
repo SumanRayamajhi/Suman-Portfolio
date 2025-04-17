@@ -9,15 +9,21 @@ function HeroSection() {
       id="home"
       className="relative w-full overflow-hidden -z-10 bg-fixed bg-parallax bg-cover mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-stone-200"
     >
-      <div className="h-screen flex justify-center items-center ">
-        <div className="  absolute font-semibold flex items-center p-20 mx-6 md:w-[1000px] text-white flex-col text-center gap-4">
+      <div className="h-screen flex justify-center items-start ">
+        <div className="absolute font-semibold flex items-center p-20 mx-6 md:w-[1000px] text-white flex-col text-center gap-4">
           <h2 className="h1">Suman Rayamajhi</h2>
-          <h3 className="h3 text-green-600">| Frontend Web Developer |</h3>
-          <p className="max-w-[700px] mb-9 mt-5 ">
+          <h3 className="h3 text-green-600 flex justify-center items-center gap-4">
+            |
+            <span className="text-white uppercase text-[21px] font-serif">
+              Frontend Web Developer
+            </span>
+            |
+          </h3>
+          {/*   <p className="max-w-[700px] mb-9 mt-5 ">
             Motivated and detail-oriented Junior Frontend Developer specializing
             in React.js. Seeking an opportunity to grow and contribute to a
             dynamic development team.
-          </p>
+          </p> */}
 
           {/*  <Button
             variant="outline"
@@ -31,7 +37,7 @@ function HeroSection() {
             </a>
             <FiDownload className="text-xl" />
           </Button> */}
-          <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg flex-shrink-0 ">
+          <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 py-4">
             <Image
               src={assets.ComputerImg1}
               alt="computer"
