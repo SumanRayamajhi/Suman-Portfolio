@@ -18,13 +18,16 @@ function AboutSection() {
             web applications. Committed to creating seamless experiences by leveraging the latest technologies and best practices in web development."
       />
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-12 mt-16 lg:items-stretch">
-        <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg flex-shrink-0 ">
-          <Image
-            src={assets.ComputerImg1}
-            alt="computer"
-            className="w-full"
-            priority
-          />
+        <div className=" lg:order-none mb-8 lg:mb-0">
+          <div className="w-[298px] h-[298px] lg:w-[498px] lg:h-[498px] mt-9 lg:mt-0">
+            <Image
+              src={assets.ProfileImg}
+              alt="profile"
+              priority
+              quality={100}
+              className="rounded-full "
+            />
+          </div>
         </div>
         <div className="flex-1 w-full flex-col justify-center">
           <Tabs defaultValue="Skills" className="w-full">

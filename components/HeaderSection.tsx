@@ -56,6 +56,7 @@ function HeaderSection() {
               key={index}
               label={item.label}
               isActive={activeSection === item.href.replace("#", "")}
+              activeSection={activeSection}
             />
           ))}
         </div>
@@ -69,6 +70,7 @@ function HeaderSection() {
               key={index}
               label={item.label}
               isActive={activeSection === item.href.replace("#", "")}
+              activeSection={activeSection}
             />
           ))}
         </div>
