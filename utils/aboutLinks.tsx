@@ -35,7 +35,7 @@ export const SVGIconEducation = () => (
     shape-rendering="geometricPrecision"
     text-rendering="geometricPrecision"
     image-rendering="optimizeQuality"
-    fill="white"
+    fill="stone-900"
     clip-rule="evenodd"
     viewBox="0 0 512 481.85"
     width={30}
@@ -53,7 +53,7 @@ export const SVGIconExperience = () => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 122.88 119.62"
-    fill="white"
+    fill="stone.900"
     width={30}
     height={30}
   >
@@ -69,7 +69,7 @@ export const SVGIconSkill = () => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 95.06 122.88"
-    fill="white"
+    fill="stone-900"
     width={30}
     height={30}
   >
@@ -119,7 +119,7 @@ export const educationList: EducationLinkTypes[] = [
     icon: <MdDateRange size={30} />,
     duration: "May 2021 - Jan 2022",
     degree: "Full-Stack Web Development Course",
-    institution: "Migracode, Bircelona",
+    institution: "Migracode, Barcelona",
   },
   {
     icon: <MdDateRange size={30} />,

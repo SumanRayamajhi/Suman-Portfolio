@@ -18,7 +18,7 @@ function AboutContent({
   return (
     <li
       key={key}
-      className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-400 shadow-md transition group gap-2"
+      className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-300 shadow-md transition group gap-2"
     >
       <div className="flex gap-2">
         <span className="text-green-600">{icon}</span>

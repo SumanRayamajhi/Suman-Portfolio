@@ -10,7 +10,7 @@ function AboutSection() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center min-h-[80vh] w-full scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-gray-200"
+      className="flex flex-col items-center min-h-[80vh] w-full scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-stone-200"
     >
       <SectionHeading
         title="About Me"
