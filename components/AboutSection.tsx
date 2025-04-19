@@ -5,6 +5,8 @@ import { Tabs } from "@/components/ui/tabs";
 import { educationList, experienceList, skillsList } from "@/utils/aboutLinks";
 import AboutTabslist from "./AboutTabslist";
 import AboutTabsContent from "./AboutTabsContent";
+import { Button } from "./ui/button";
+import { FiDownload } from "react-icons/fi";
 
 function AboutSection() {
   return (
@@ -17,9 +19,18 @@ function AboutSection() {
         description="Passionate about building user-friendly, responsive, and scalable
             web applications. Committed to creating seamless experiences by leveraging the latest technologies and best practices in web development."
       />
+      <Button variant="outline" className="uppercase flex items-center gap-2">
+        <a
+          download="Suman-Rayamajhi-Resume.pdf"
+          href="/resume/Suman-Rayamajhi-Resume.pdf"
+        >
+          Download CV
+        </a>
+        <FiDownload className="text-xl" />
+      </Button>
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-12 mt-16 lg:items-stretch">
         <div className=" lg:order-none mb-8 lg:mb-0">
-          <div className="w-[298px] h-[298px] lg:w-[498px] lg:h-[498px] mt-9 lg:mt-0">
+          <div className="w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] mt-9 lg:mt-0">
             <Image
               src={assets.ProfileImg}
               alt="profile"

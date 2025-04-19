@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { FiSend } from "react-icons/fi";
 import { contactList } from "@/utils/contactLinks";
 import { sendEmail } from "@/server/sendEmail";
+import { Label } from "./ui/label";
 
 function ContactSection() {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -17,40 +18,48 @@ function ContactSection() {
   }; */
 
   return (
-    <section id="contact" className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16">
+    <section
+      id="contact"
+      className="scroll-mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-stone-200"
+    >
       <SectionHeading
         title="Contact"
         description="
-      Do not hesitate to reach out, to get in touch with me."
+      Do not hesitate to get in touch with me."
       />
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-[30px]">
           <div className="lg:h-[54%] order-2 lg:order-none">
             <form
-              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-lg lg:w-[36rem]"
+              className="flex flex-col gap-6 p-10 bg-stone-300 rounded-lg lg:w-[36rem]"
               action={async (formData) => {
                 await sendEmail(formData);
               }}
             >
-              <h3 className="h3 text-green-600 ">Let´s work together</h3>
+              <h3 className="h3 text-stone-900 ">Let´s work together</h3>
 
+              <Label htmlFor="email" className="-mb-5 text-lg text-green-600">
+                Email
+              </Label>
               <Input
                 type="email"
                 name="senderEmail"
                 required
-                placeholder="Email address"
+                placeholder="example@email.com"
                 area-label="Email address"
-                className="h-14 rounded-lg"
+                className="h-14"
                 value={formData.email}
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
               />
-
+              <Label htmlFor="email" className="-mb-5 text-lg text-green-600">
+                Message
+              </Label>
               <Textarea
-                className="h-52 my-3 text-white/75"
+                className="h-52"
                 required
-                placeholder="Type your message here."
+                placeholder="Type your message here..."
                 name="message"
                 aria-label="Message"
                 value={formData.message}
