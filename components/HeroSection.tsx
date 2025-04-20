@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
-import { Button } from "./ui/button";
-import { FiDownload } from "react-icons/fi";
 
 function HeroSection() {
   return (
@@ -19,24 +17,7 @@ function HeroSection() {
             </span>
             |
           </h3>
-          {/*   <p className="max-w-[700px] mb-9 mt-5 ">
-            Motivated and detail-oriented Junior Frontend Developer specializing
-            in React.js. Seeking an opportunity to grow and contribute to a
-            dynamic development team.
-          </p> */}
 
-          {/*  <Button
-            variant="outline"
-            className="uppercase flex items-center gap-2"
-          >
-            <a
-              download="Suman-Rayamajhi-Resume.pdf"
-              href="/resume/Suman-Rayamajhi-Resume.pdf"
-            >
-              Download CV
-            </a>
-            <FiDownload className="text-xl" />
-          </Button> */}
           <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl flex-shrink-0 py-4">
             <Image
               src={assets.ComputerImg1}
@@ -46,18 +27,6 @@ function HeroSection() {
             />
           </div>
         </div>
-
-        {/*  <div className="order-1 lg:order-none mb-8 lg:mb-0">
-          <div className="w-[298px] h-[298px] lg:w-[498px] lg:h-[498px] mt-9 lg:mt-0">
-            <Image
-              src={assets.ProfileImg}
-              alt="profile"
-              priority
-              quality={100}
-              className="rounded-full "
-            />
-          </div>
-        </div> */}
       </div>
     </section>
   );
