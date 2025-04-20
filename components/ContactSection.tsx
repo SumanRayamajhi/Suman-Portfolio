@@ -87,7 +87,9 @@ function ContactSection() {
                     </div>
                     <div className="flex.1">
                       <p>{title}</p>
-                      <h3 className="h3">{description}</h3>
+                      <a href="https://www.linkedin.com/in/suman-rayamajhi">
+                        <h3 className="h3">{description}</h3>
+                      </a>
                     </div>
                   </li>
                 );
