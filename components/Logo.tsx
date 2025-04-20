@@ -16,9 +16,9 @@ function Logo() {
           fontFamily="Arial, sans-serif"
           fontSize="35"
           fontWeight="bold"
-          fill="#43A047"
+          fill="currentColor"
           textAnchor="middle"
-          className="group-hover:fill-green-600 transition-colors duration-300"
+          className="text-green-600 group-hover:fill-green-600"
         >
           P
         </text>
@@ -28,10 +28,10 @@ function Logo() {
           fontFamily="Arial, sans-serif"
           fontSize="27"
           fontWeight="bold"
-          fill="#43A047"
+          fill="currentColor"
           textAnchor="middle"
           letterSpacing="-0.6"
-          className="group-hover:fill-green-600 transition-colors duration-300"
+          className="text-green-600 group-hover:fill-green-600"
         >
           ORTFOLI
         </text>
@@ -41,9 +41,9 @@ function Logo() {
           fontFamily="Arial, sans-serif"
           fontSize="35"
           fontWeight="bold"
-          fill="#43A047"
+          fill="currentColor"
           textAnchor="middle"
-          className="group-hover:fill-green-600 transition-colors duration-300"
+          className="text-green-600 group-hover:fill-green-600"
         >
           O
         </text>
@@ -52,9 +52,9 @@ function Logo() {
           y1="55%"
           x2="70%"
           y2="55%"
-          stroke="#43A047"
+          stroke="currentColor"
           strokeWidth="1"
-          className="group-hover:stroke-green-500 transition-colors duration-300"
+          className="text-green-600 group-hover:fill-green-600"
         />
         <text
           x="50%"
@@ -62,10 +62,10 @@ function Logo() {
           fontFamily="Arial, sans-serif"
           fontSize="10"
           fontWeight="bold"
-          fill="#43A047"
+          fill="currentColor"
           letterSpacing="2"
           textAnchor="middle"
-          className="group-hover:fill-green-500 transition-colors duration-300"
+          className="text-green-600 group-hover:fill-green-600"
         >
           SUMAN RAYAMAJHI
         </text>
