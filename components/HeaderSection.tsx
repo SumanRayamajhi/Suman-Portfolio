@@ -39,6 +39,8 @@ function HeaderSection() {
       requestAnimationFrame(handleScroll);
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", throttledScroll);
     return () => window.removeEventListener("scroll", throttledScroll);
   }, [activeSection]);
