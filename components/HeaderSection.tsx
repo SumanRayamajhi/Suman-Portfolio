@@ -17,7 +17,7 @@ function HeaderSection() {
       setIsScrolled(window.scrollY > 50);
 
       const sections = document.querySelectorAll("section");
-      let currentSection: string = activeSection;
+      let currentSection: string = "";
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 200;
@@ -30,13 +30,20 @@ function HeaderSection() {
           currentSection = sectionId;
         }
       });
-      setActiveSection(currentSection);
+      if (currentSection !== activeSection) {
+        setActiveSection(currentSection);
+      }
     };
+
+    const throttledScroll = () => {
+      requestAnimationFrame(handleScroll);
+    };
+
     handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", throttledScroll);
+    return () => window.removeEventListener("scroll", throttledScroll);
+  }, [activeSection]);
 
   return (
     <header
@@ -45,7 +52,7 @@ function HeaderSection() {
           ? activeSection === "home"
             ? "bg-black"
             : "bg-white"
-          : "shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)] translate-y-[-5px] bg-black"
+          : "shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)] bg-black"
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between">
