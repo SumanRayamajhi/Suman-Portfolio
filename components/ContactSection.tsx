@@ -69,10 +69,10 @@ function ContactSection() {
               />
               <Button
                 variant="outline"
-                className="max-w-44 flex items-center gap-2 "
+                className="group max-w-44 flex items-center gap-2 focus:scale-110 hover:scale-110 active:scale-105 transition"
               >
                 <span>Send Message</span>
-                <FiSend className="text-xl" />
+                <FiSend className="text-xl opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </Button>
             </form>
           </div>
@@ -82,7 +82,7 @@ function ContactSection() {
                 const { icon, title, description } = contact;
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] lg:w-[72px] lg:h-[72px] bg-[#27272c] text-green-600 rounded-md flex items-center justify-center">
+                    <div className="w-[52px] h-[52px] lg:w-[72px] lg:h-[72px] bg-stone-300 text-green-600 rounded-md flex items-center justify-center">
                       <div className="text-[28px]">{icon}</div>
                     </div>
                     <div className="flex.1">

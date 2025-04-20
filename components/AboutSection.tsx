@@ -19,14 +19,17 @@ function AboutSection() {
         description="Passionate about building user-friendly, responsive, and scalable
             web applications. Committed to creating seamless experiences by leveraging the latest technologies and best practices in web development."
       />
-      <Button variant="outline" className="uppercase flex items-center gap-2">
+      <Button
+        variant="outline"
+        className="group uppercase flex items-center gap-2 focus:scale-110 hover:scale-110 active:scale-105 transition"
+      >
         <a
           download="Suman-Rayamajhi-Resume.pdf"
           href="/resume/Suman-Rayamajhi-Resume.pdf"
         >
           Download CV
         </a>
-        <FiDownload className="text-xl" />
+        <FiDownload className="text-xl group-hover:translate-y-1 transition-all" />
       </Button>
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-12 mt-16 lg:items-stretch">
         <div className=" lg:order-none mb-8 lg:mb-0">
