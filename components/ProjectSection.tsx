@@ -2,7 +2,6 @@ import React from "react";
 import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import { projectList } from "@/utils/projectLinks";
-import { assets } from "@/assets/assets";
 import Link from "next/link";
 import {
   Tooltip,
@@ -11,11 +10,13 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { FaLocationArrow } from "react-icons/fa6";
 
 function ProjectSection() {
   return (
-    <section id="project">
+    <section
+      id="project"
+      className="mt-14 py-16 px-4 sm:px-8 lg:px-16 bg-stone-200"
+    >
       <SectionHeading
         title="Projects"
         description="Few projects that I made using React.Js"
@@ -32,7 +33,7 @@ function ProjectSection() {
             githubLink,
           } = project;
           return (
-            <div key={index} className="container mx-auto p-[20px]">
+            <div key={index} className="container mx-auto p-[20px] ">
               <div className="flex flex-col lg:flex-row lg:gap-[30px]">
                 <div className="w-full lg:w-[50%] h-full order-2 lg:order-none">
                   <div className="flex flex-col gap-[10px]">
