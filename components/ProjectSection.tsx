@@ -33,7 +33,10 @@ function ProjectSection() {
             githubLink,
           } = project;
           return (
-            <div key={index} className="container mx-auto p-[20px] ">
+            <div
+              key={index}
+              className="container mx-auto p-[20px] bg-stone-300"
+            >
               <div className="flex flex-col lg:flex-row lg:gap-[30px]">
                 <div className="w-full lg:w-[50%] h-full order-2 lg:order-none">
                   <div className="flex flex-col gap-[10px]">
