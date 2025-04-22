@@ -58,7 +58,7 @@ function ProjectSection() {
                       <Link href={liveLink}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-slate-300 flex justify-center items-center group">
+                            <TooltipTrigger className="w-[40px] h-[40px] rounded-full  flex justify-center items-center group bg-stone-200 focus:scale-110 hover:scale-110 active:scale-105 transition">
                               <BsArrowUpRight className="group-hover:text-green-600" />
                               <TooltipContent>
                                 <p>Live Project</p>
@@ -71,7 +71,7 @@ function ProjectSection() {
                         <Link href={githubLink}>
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
-                              <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-slate-400 flex justify-center items-center group">
+                              <TooltipTrigger className="w-[40px] h-[40px] rounded-full bg-stone-200 flex justify-center items-center group  focus:scale-110 hover:scale-110 active:scale-105 transition">
                                 <BsGithub className="group-hover:text-green-600" />
                                 <TooltipContent>
                                   <p>Github Repository</p>
