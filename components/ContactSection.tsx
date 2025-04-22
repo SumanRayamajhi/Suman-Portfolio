@@ -12,11 +12,6 @@ import { Label } from "./ui/label";
 function ContactSection() {
   const [formData, setFormData] = useState({ email: "", message: "" });
 
-  /*  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-  }; */
-
   return (
     <section
       id="contact"
@@ -95,14 +90,14 @@ function ContactSection() {
                         )}
                       </div>
                     </div>
-                    <div className="flex.1">
+                    <div className="flex-1 text-stone-900">
                       <p>{title}</p>
                       {isLinkedin ? (
                         <a href="https://www.linkedin.com/in/suman-rayamajhi">
-                          <h3 className="h3">{description}</h3>
+                          <h3 className="h3 text-stone-900">{description}</h3>
                         </a>
                       ) : (
-                        <h3 className="h3">{description}</h3>
+                        <h3 className="h3 text-stone-900">{description}</h3>
                       )}
                     </div>
                   </li>
