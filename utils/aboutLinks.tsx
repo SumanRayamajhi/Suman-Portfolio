@@ -7,7 +7,13 @@ import {
   FaFigma,
   FaNodeJs,
 } from "react-icons/fa6";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiShadcnui,
+} from "react-icons/si";
 
 type SkillsLinkTypes = {
   icon: React.ReactNode;
@@ -111,6 +117,18 @@ export const skillsList: SkillsLinkTypes[] = [
   {
     icon: <FaFigma size={30} />,
     title: "Figma",
+  },
+  {
+    icon: <SiTypescript size={30} />,
+    title: "Typescript",
+  },
+  {
+    icon: <SiPostgresql size={30} />,
+    title: "PostgreSQL",
+  },
+  {
+    icon: <SiShadcnui size={30} />,
+    title: "Shadcn ui",
   },
 ];
 

@@ -38,7 +38,7 @@ function AboutTabsContent({
             <li key={index} className="hover:scale-105 transition-transform">
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <TooltipTrigger className="w-20 h-20 sm:w-24 sm:h-24 bg-stone-300 rounded-lg flex justify-center items-center shadow-md transition group">
+                  <TooltipTrigger className="w-16 h-16 sm:w-24 sm:h-24 bg-stone-300 rounded-full flex justify-center items-center shadow-md transition group">
                     <div className="text-5xl text-stone-900 group-hover:text-green-600">
                       {skill.icon}
                     </div>
