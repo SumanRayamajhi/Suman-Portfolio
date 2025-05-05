@@ -1,6 +1,6 @@
 import { NavItems } from "@/utils/navLinks";
 import { useState } from "react";
-import NavLink from "./Header/NavLink";
+import NavLink from "./NavLink";
 
 interface MobileMenuProps {
   activeSection: string;
