@@ -14,26 +14,7 @@ import {
   SiPostgresql,
   SiShadcnui,
 } from "react-icons/si";
-
-type SkillsLinkTypes = {
-  icon: React.ReactNode;
-  title: string;
-};
-
-type EducationLinkTypes = {
-  icon: React.ReactNode;
-  duration: string;
-  degree: string;
-  institution: string;
-};
-
-type ExperienceLinkTypes = {
-  icon: React.ReactNode;
-  duration: string;
-  title: string;
-  company: string;
-  description: string;
-};
+import { Education, Experience, Skill } from "@/types/about";
 
 export const SVGIconEducation = () => (
   <svg
@@ -85,7 +66,7 @@ export const SVGIconSkill = () => (
   </svg>
 );
 
-export const skillsList: SkillsLinkTypes[] = [
+export const skillsList: Skill[] = [
   {
     icon: <FaHtml5 size={30} />,
     title: "HTML 5",
@@ -132,7 +113,7 @@ export const skillsList: SkillsLinkTypes[] = [
   },
 ];
 
-export const educationList: EducationLinkTypes[] = [
+export const educationList: Education[] = [
   {
     icon: <MdDateRange size={30} />,
     duration: "May 2021 - Jan 2022",
@@ -147,7 +128,7 @@ export const educationList: EducationLinkTypes[] = [
   },
 ];
 
-export const experienceList: ExperienceLinkTypes[] = [
+export const experienceList: Experience[] = [
   {
     icon: <MdDateRange size={30} />,
     duration: "Nov 2023 - Oct 2024",

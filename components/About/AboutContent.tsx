@@ -1,25 +1,14 @@
-type ContentTypes = {
-  key: number;
-  icon: React.ReactNode;
-  duration: string;
-  title: string;
-  organization: string;
-  description?: string;
-};
+import { AboutContentTypes } from "@/types/about";
 
 function AboutContent({
-  key,
   icon,
   duration,
   title,
   organization,
   description,
-}: ContentTypes) {
+}: AboutContentTypes) {
   return (
-    <li
-      key={key}
-      className="h-[184px] py-6 md:py-10 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  bg-stone-300 shadow-md transition group gap-2"
-    >
+    <div className="h-[200px] md:h-[184px] py-10 px-8 md:px-10 rounded-md flex flex-col justify-center items-center lg:items-start bg-stone-100 shadow-md transition group gap-2">
       <div className="flex gap-2">
         <span className="text-green-600">{icon}</span>
         <h4 className="font-bold">{duration}</h4>
@@ -27,8 +16,8 @@ function AboutContent({
 
       <h3 className="h3 lg:text-[20px]">{title}</h3>
       <p className="text-green-600">{organization}</p>
-      <p className="">{description}</p>
-    </li>
+      <p>{description}</p>
+    </div>
   );
 }
 
