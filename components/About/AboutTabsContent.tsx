@@ -4,8 +4,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./ui/tooltip";
-import { ScrollArea } from "./ui/scroll-area";
+} from "../ui/tooltip";
+import { ScrollArea } from "../ui/scroll-area";
 import AboutContent from "./AboutContent";
 
 type AboutTabsContentType = {

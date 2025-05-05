@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../SectionHeading";
 import { Tabs } from "@/components/ui/tabs";
 import { educationList, experienceList, skillsList } from "@/utils/aboutLinks";
+import { FiDownload } from "react-icons/fi";
+import { Button } from "../ui/button";
 import AboutTabslist from "./AboutTabslist";
 import AboutTabsContent from "./AboutTabsContent";
-import { Button } from "./ui/button";
-import { FiDownload } from "react-icons/fi";
 
 function AboutSection() {
   return (
