@@ -18,12 +18,12 @@ import { Education, Experience, Skill } from "@/types/about";
 
 export const SVGIconEducation = () => (
   <svg
+    className="fill-stone-900"
     xmlns="http://www.w3.org/2000/svg"
-    shape-rendering="geometricPrecision"
-    text-rendering="geometricPrecision"
-    image-rendering="optimizeQuality"
-    fill="stone-900"
-    clip-rule="evenodd"
+    shapeRendering="geometricPrecision"
+    textRendering="geometricPrecision"
+    imageRendering="optimizeQuality"
+    clipRule="evenodd"
     viewBox="0 0 512 481.85"
     width={30}
     height={30}
@@ -35,12 +35,12 @@ export const SVGIconEducation = () => (
 );
 export const SVGIconExperience = () => (
   <svg
+    className="fill-stone-900"
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 122.88 119.62"
-    fill="stone.900"
     width={30}
     height={30}
   >
@@ -51,12 +51,12 @@ export const SVGIconExperience = () => (
 );
 export const SVGIconSkill = () => (
   <svg
+    className="fill-stone-900"
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 95.06 122.88"
-    fill="stone-900"
     width={30}
     height={30}
   >
