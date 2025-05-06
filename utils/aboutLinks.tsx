@@ -14,35 +14,16 @@ import {
   SiPostgresql,
   SiShadcnui,
 } from "react-icons/si";
-
-type SkillsLinkTypes = {
-  icon: React.ReactNode;
-  title: string;
-};
-
-type EducationLinkTypes = {
-  icon: React.ReactNode;
-  duration: string;
-  degree: string;
-  institution: string;
-};
-
-type ExperienceLinkTypes = {
-  icon: React.ReactNode;
-  duration: string;
-  title: string;
-  company: string;
-  description: string;
-};
+import { Education, Experience, Skill } from "@/types/about";
 
 export const SVGIconEducation = () => (
   <svg
+    className="fill-stone-900"
     xmlns="http://www.w3.org/2000/svg"
-    shape-rendering="geometricPrecision"
-    text-rendering="geometricPrecision"
-    image-rendering="optimizeQuality"
-    fill="stone-900"
-    clip-rule="evenodd"
+    shapeRendering="geometricPrecision"
+    textRendering="geometricPrecision"
+    imageRendering="optimizeQuality"
+    clipRule="evenodd"
     viewBox="0 0 512 481.85"
     width={30}
     height={30}
@@ -54,12 +35,12 @@ export const SVGIconEducation = () => (
 );
 export const SVGIconExperience = () => (
   <svg
+    className="fill-stone-900"
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 122.88 119.62"
-    fill="stone.900"
     width={30}
     height={30}
   >
@@ -70,12 +51,12 @@ export const SVGIconExperience = () => (
 );
 export const SVGIconSkill = () => (
   <svg
+    className="fill-stone-900"
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 95.06 122.88"
-    fill="stone-900"
     width={30}
     height={30}
   >
@@ -85,7 +66,7 @@ export const SVGIconSkill = () => (
   </svg>
 );
 
-export const skillsList: SkillsLinkTypes[] = [
+export const skillsList: Skill[] = [
   {
     icon: <FaHtml5 size={30} />,
     title: "HTML 5",
@@ -132,7 +113,7 @@ export const skillsList: SkillsLinkTypes[] = [
   },
 ];
 
-export const educationList: EducationLinkTypes[] = [
+export const educationList: Education[] = [
   {
     icon: <MdDateRange size={30} />,
     duration: "May 2021 - Jan 2022",
@@ -147,7 +128,7 @@ export const educationList: EducationLinkTypes[] = [
   },
 ];
 
-export const experienceList: ExperienceLinkTypes[] = [
+export const experienceList: Experience[] = [
   {
     icon: <MdDateRange size={30} />,
     duration: "Nov 2023 - Oct 2024",

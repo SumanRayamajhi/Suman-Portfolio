@@ -4,26 +4,10 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./ui/tooltip";
-import { ScrollArea } from "./ui/scroll-area";
+} from "../ui/tooltip";
+import { ScrollArea } from "../ui/scroll-area";
 import AboutContent from "./AboutContent";
-
-type AboutTabsContentType = {
-  skillsList: { title: string; icon: React.ReactNode }[];
-  educationList: {
-    icon: React.ReactNode;
-    duration: string;
-    degree: string;
-    institution: string;
-  }[];
-  experienceList: {
-    icon: React.ReactNode;
-    duration: string;
-    title: string;
-    company: string;
-    description: string;
-  }[];
-};
+import { AboutTabsContentType } from "@/types/about";
 
 function AboutTabsContent({
   skillsList,
@@ -38,7 +22,7 @@ function AboutTabsContent({
             <li key={index} className="hover:scale-105 transition-transform">
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <TooltipTrigger className="w-16 h-16 sm:w-24 sm:h-24 bg-stone-300 rounded-full flex justify-center items-center shadow-md transition group">
+                  <TooltipTrigger className="w-16 h-16 sm:w-20 sm:h-20 bg-stone-100 rounded-full flex justify-center items-center shadow-md transition group">
                     <div className="text-5xl text-stone-900 group-hover:text-green-600">
                       {skill.icon}
                     </div>
