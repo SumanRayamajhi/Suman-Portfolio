@@ -1,7 +1,7 @@
 import AboutSection from "@/components/About/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
-import ProjectSection from "@/components/ProjectSection";
+import ProjectSection from "@/components/Project/ProjectSection";
 
 function HomePage() {
   return (
