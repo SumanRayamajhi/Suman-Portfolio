@@ -16,7 +16,7 @@ export const contactList: ContactLinkTypes[] = [
   {
     icon: <MdOutlineMail size={30} />,
     title: "Email",
-    description: "samsrayamajhi@gmail.com",
+    description: "sams.rayamajhi@gmail.com",
   },
   {
     icon: <FaLinkedin size={30} />,
