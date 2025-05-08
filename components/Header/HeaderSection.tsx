@@ -19,7 +19,7 @@ function HeaderSection() {
         isScrolled
           ? activeSection === "home"
             ? "bg-black"
-            : "bg-white"
+            : "bg-white shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)]"
           : "shadow-[0px_2px_6px_0px_rgba(0,_0,_0,_0.1)] bg-black"
       }`}
     >
