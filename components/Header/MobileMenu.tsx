@@ -40,9 +40,9 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
       </div>
 
       <div
-        className={`fixed top-[11vh] right-0 w-[75%] h-screen lg:hidden bg-stone-300 flex flex-col items-center justify-center transition-transform duration-300 ${
+        className={`fixed top-[11vh] right-0 w-[75%] h-screen lg:hidden  flex flex-col items-center justify-center transition-transform duration-300 ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-[100%]"
-        }`}
+        } ${activeSection === "home" ? "bg-black" : "bg-white"} `}
         onClick={toggleMobileMenu}
       >
         <section className="flex flex-col font-semibold space-y-6">
