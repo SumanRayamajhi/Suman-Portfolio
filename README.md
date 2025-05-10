@@ -1,13 +1,13 @@
-🌐 **Personal Portfolio**
+🌐 **Personal Portfolio**<br>
 Welcome to my personal developer portfolio! This is a modern, responsive, and accessible portfolio built with Next.js, TypeScript, and Tailwind CSS, designed to showcase my skills, education, and experience — along with a working contact form powered by server-side email handling.
 
 ✨ **Features**<br>
-⚡ Fast & Responsive – Built with performance and responsiveness in mind.
-🎨 UI Components – Reusable components created using shadcn/ui.
-🧩 Tab Navigation – Interactive "Skills", "Education", and "Experience" sections using accessible tab components.
-📬 Contact Form – Validated form with live email sending via sendEmail() server function.
-🧠 Icon Integration – Custom icons using react-icons to improve visual clarity.
-♿ Accessibility – Semantic HTML and keyboard navigable components.
+⚡ Fast & Responsive – Built with performance and responsiveness in mind.<br>
+🎨 UI Components – Reusable components created using shadcn/ui.<br>
+🧩 Tab Navigation – Interactive "Skills", "Education", and "Experience" sections using accessible tab components.<br>
+📬 Contact Form – Validated form with live email sending via sendEmail() server function.<br>
+🧠 Icon Integration – Custom icons using react-icons to improve visual clarity.<br>
+♿ Accessibility – Semantic HTML and keyboard navigable components.<br>
 
 🛠️ **Technologies Used:**
 
@@ -17,5 +17,5 @@ Welcome to my personal developer portfolio! This is a modern, responsive, and ac
 - **Inkscape**: To enhance visual appeal of homepage, I designed a set of abstract line shapes using Inkscape, and integrated them into the hero section with a parallax scrolling effect.
 - **Vercel**: To host the project.
 
-📬 **Contact**
+📬 **Contact**<br>
 If you'd like to get in touch, feel free to [visit my website](https://suman-portfolio-mu.vercel.app/) or email me directly at **sams.rayamajhi@gmail.com**.
