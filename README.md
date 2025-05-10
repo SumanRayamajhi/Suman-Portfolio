@@ -1,7 +1,7 @@
 🌐 **Personal Portfolio**
 Welcome to my personal developer portfolio! This is a modern, responsive, and accessible portfolio built with Next.js, TypeScript, and Tailwind CSS, designed to showcase my skills, education, and experience — along with a working contact form powered by server-side email handling.
 
-✨ **Features**
+✨ **Features**<br>
 ⚡ Fast & Responsive – Built with performance and responsiveness in mind.
 🎨 UI Components – Reusable components created using shadcn/ui.
 🧩 Tab Navigation – Interactive "Skills", "Education", and "Experience" sections using accessible tab components.
