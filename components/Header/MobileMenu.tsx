@@ -18,7 +18,7 @@ function MobileMenu({ activeSection }: MobileMenuProps) {
       <div className="flex items-center space-x-6">
         <button
           onClick={toggleMobileMenu}
-          className=" flex flex-col justify-center items-end w-8 h-8 focus:outline-none group gap-1 lg:hidden"
+          className=" flex flex-col justify-center items-end w-8 h-8 px-2 focus:outline-none group gap-1 lg:hidden"
           aria-label="Toggle menu"
         >
           <span
