@@ -9,11 +9,11 @@ function HeroSection() {
     >
       <div className="flex justify-center items-center h-full">
         <div className="absolute flex flex-col justify-center items-center gap-4 text-white text-center font-semibold p-6 md:p-20 md:w-[1000px]">
-          <h2 className="h1 uppercase">Suman Rayamajhi</h2>
-          <h3 className="h3 text-green-600 flex items-center gap-4">
-            <span className="text-white uppercase text-[21px] font-serif">
-              | Frontend Web Developer |
-            </span>
+          <h1 className="h1 uppercase">Suman Rayamajhi</h1>
+          <h3 className="h3 flex items-center font-serif uppercase gap-2 text-slate-300 tracking-wider">
+            <span className="bg-green-600 h-6 w-[3px] rounded-lg" />
+            Frontend Web Developer
+            <span className="bg-green-600 h-6 w-[3px] rounded-lg" />
           </h3>
 
           <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl py-16">
