@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full h-screen overflow-hidden bg-fixed bg-parallax bg-cover bg-stone-200 -z-10 mt-14 py-16  px-8 md:px-4 lg:px-16"
+      className="relative w-full h-screen overflow-hidden bg-fixed bg-parallax bg-cover mt-14 px-6 md:px-4 lg:px-16 py-16 z-0"
     >
       <div className="flex justify-center items-center h-full">
         <div className="absolute flex flex-col justify-center items-center gap-4 text-white text-center font-semibold p-6 md:p-20 md:w-[1000px]">
