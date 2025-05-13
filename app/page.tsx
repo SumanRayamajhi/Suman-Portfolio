@@ -1,6 +1,6 @@
 import AboutSection from "@/components/About/AboutSection";
 import ContactSection from "@/components/Contact/ContactSection";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/Hero/HeroSection";
 import ProjectSection from "@/components/Project/ProjectSection";
 
 function HomePage() {
