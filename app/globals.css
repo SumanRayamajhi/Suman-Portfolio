@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -10,12 +15,12 @@
 
 @layer base {
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-bold;
+    @apply text-[42px] md:text-[48px] lg:text-[70px] xl:text-[84px] leading-[1.1] font-bold;
   }
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+    @apply text-[18px] md:text-[22px] lg:text-[24] xl:text-[26px] leading-[1.1] font-medium;
   }
 }
